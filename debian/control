@@ -68,7 +68,7 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: bunsen-conky,
  bunsen-docs,
- bunsen-images,
+ bunsen-images-base,
  bunsen-numix-icon-theme,
  bunsen-pipemenus,
  bunsen-themes,
