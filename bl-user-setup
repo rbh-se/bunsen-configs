@@ -285,7 +285,7 @@ differ () {
     for gui in meld kompare diffuse
     do
         hash "$gui" 2>/dev/null && {
-            "$gui" "$firstfile" "$secondfile"
+            "$gui" "$firstfile" "$secondfile" &
             return
         }
     done
@@ -391,9 +391,14 @@ $overwrite_msg1
 <b>${name}</b>
 $overwrite_msg2
 "
+
+# Meld is very slow to return the prompt after being closed, so in the function differ()
+# it is forked so user does not have to wait for the popup to reappear.
+# This makes the popup annoyingly get in front of meld while comparing two files
+# unless the yad --on-top option (set in yad-includes) is cancelled:
         while true
         do
-            yad_question "$msg" --button="${overwrite_yesname}":0 --button='Skip':1 --button='Do All':2 --button='Skip All':3 --button='View Diff':4
+            yad_question "$msg" --on-top=0 --button="${overwrite_yesname}":0 --button='Skip':1 --button='Do All':2 --button='Skip All':3 --button='View Diff':4
             ret=$?
             case $ret in
             0|1|2|3)
