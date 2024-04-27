@@ -1,3 +1,9 @@
+bunsen-configs (12.6-1) boron; urgency=medium
+
+  * Add new package bunsen-configs-base.
+
+ -- John Crawley <john@bunsenlabs.org>  Sat, 27 Apr 2024 16:01:12 +0900
+
 bunsen-configs (12.5.4-1) boron; urgency=medium
 
   * Rename horizontal tint2 files including "horizontal".
