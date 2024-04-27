@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for bunsen-configs-lite
+# prerm script for bunsen-configs-base
 
 # Summary of ways this script is called:
 #    prerm remove
