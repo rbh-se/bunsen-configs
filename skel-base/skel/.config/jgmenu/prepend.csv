@@ -148,7 +148,7 @@ inxi - Quick System Info,x-terminal-emulator -T 'inxi system info  (Q to close)'
 #Hardinfo GUI system profiler,hardinfo,applications-development
 BunsenLabs Install Info,x-terminal-emulator -T 'BunsenLabs install info (Q to close)' -e less '/etc/bunsen/bunsen_install',distributor-logo-bunsenlabs
 ^sep()
-Printers,^pipe(jgmenu_run ob --cmd="bl-printing-pipemenu" --tag="bl-printing-pipemenu"),printer
+#Printers,^pipe(jgmenu_run ob --cmd="bl-printing-pipemenu" --tag="bl-printing-pipemenu"),printer
 #Task Manager (htop),x-terminal-emulator -T 'htop task manager' -e htop,htop
 #Install Favourite Packages,^pipe(bl-install-pipemenu),synaptic
 #Synaptic Package Manager,sh -c 'pkexec synaptic',synaptic
