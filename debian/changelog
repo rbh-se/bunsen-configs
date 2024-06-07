@@ -1,3 +1,13 @@
+bunsen-configs (12.7-1) boron; urgency=medium
+
+  * bunsen-configs-base: menu: comment out unavailable printer pipemenu.
+  * bunsen-configs: move material-solarized-suruplusplus-icon-theme
+     from Suggests to Recommends so it is available after an upgrade
+     from Beryllium.
+  * bl-mpv: fix incorrect detection of audio files as video.
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 07 Jun 2024 18:33:05 +0900
+
 bunsen-configs (12.6-1) boron; urgency=medium
 
   * Add new package bunsen-configs-base.
